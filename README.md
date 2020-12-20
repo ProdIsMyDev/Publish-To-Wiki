@@ -28,8 +28,6 @@ jobs:
 
 ## Setup
 
-This GitHub action requires that your repository has the following:
-
 This [Action][github actions] requires you to configure a secret called 'GH_PERSONAL_ACCESS_TOKEN' within your repository, containing a token with 'repo' rights.
 
 
