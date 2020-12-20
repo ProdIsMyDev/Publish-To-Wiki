@@ -39,6 +39,6 @@ MIT
 
 ## Contact
 
-Mattt ([@ProdIsMyDev](https://twitter.com/ProdIsMyDev))
+Chris ([@ProdIsMyDev](https://twitter.com/ProdIsMyDev))
 
 [github actions]: https://help.github.com/en/actions
