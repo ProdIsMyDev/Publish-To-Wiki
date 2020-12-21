@@ -14,4 +14,4 @@ python3 /create_sidebar.py
 cd /wiki
 git add .
 git commit -m "Automatic Wiki Deployment"
-git push -f origin main
+git push -f origin master
