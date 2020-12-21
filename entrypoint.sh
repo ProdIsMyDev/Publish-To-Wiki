@@ -15,7 +15,6 @@ WIKI_URL="https://${GITHUB_ACTOR}:${GH_PERSONAL_ACCESS_TOKEN}@github.com/$GITHUB
 cd /
 
 mkdir /wiki
-
 cd /wiki
 
 git init
@@ -24,6 +23,11 @@ git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
 git pull "$WIKI_URL"
 
 cd /
+
+mv /wiki/.git /
+rm -rf /wiki
+mkdir /wiki
+mv /.git /wiki
 
 yes | cp -rf /repo/wiki/* /wiki/
 python3 /create_sidebar.py
