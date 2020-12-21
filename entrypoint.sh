@@ -10,7 +10,7 @@ git clone "https://${GH_PERSONAL_ACCESS_TOKEN}@github.com/$GITHUB_REPOSITORY.wik
 
 
 cp repo/wiki/* wiki/
-python create_sidebar.py
+python /create_sidebar.py
 cd wiki/
 git add .
 git commit -m "Automatic Wiki Deployment"
