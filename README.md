@@ -1,11 +1,11 @@
-# Github Wiki Publish Action
+# Publish to Wiki on GitHub
 
 This [Action][github actions] publishes the Wiki to your GitHub Wiki and generates a Sidebar by the Folder Structure.
 
 
 ## Usage
 
-Add a Step 'ProdIsMyDev/publish-to-wiki@v1' to your workflow.
+Add a Step 'ProdIsMyDev/Publish-To-Wiki@1' to your workflow.
 
 ```yml
 name: Example_Wiki_Step
@@ -18,10 +18,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - name: Upload Wiki to GitHub Wiki
-        uses: ProdIsMyDev/publish-to-wiki@v1
-        with:
-          path: "wiki"
+      - name: Publish to Wiki on GitHub
+        uses: ProdIsMyDev/Publish-To-Wiki@1
         env:
           GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
 ```
