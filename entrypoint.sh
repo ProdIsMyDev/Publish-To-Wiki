@@ -18,7 +18,7 @@ cd /wiki
 git init
 git config user.name "$GITHUB_ACTOR"
 git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-git remote add origin "https://$GITHUB_ACTOR:$GH_PERSONAL_ACCESS_TOKEN@github.com/$GITHUB_REPOSITORY.git"
+git remote add origin "https://$GITHUB_ACTOR:$GH_PERSONAL_ACCESS_TOKEN@github.com/$GITHUB_REPOSITORY.wiki.git"
 git add .
 git commit -m "Automatic Wiki Deployment"
 git push --set-upstream https://${GH_PERSONAL_ACCESS_TOKEN}@github.com/$GITHUB_REPOSITORY.wiki.git master
