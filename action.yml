@@ -1,4 +1,4 @@
-name: 'Publish to GitHub Wiki'
+name: 'Publish to Wiki on GitHub'
 description: 'This Action publishes the Wiki to your GitHub Wiki and generates a Sidebar by the Folder Structure.'
 
 inputs:
