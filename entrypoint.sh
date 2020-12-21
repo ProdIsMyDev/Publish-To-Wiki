@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Checking out project"
-echo "${TEST}"
+echo "${GH_PERSONAL_ACCESS_TOKEN}"
 git config --global user.name "$GITHUB_ACTOR"
 git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
