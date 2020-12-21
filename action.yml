@@ -12,3 +12,7 @@ runs:
   image: 'Dockerfile'
   args: 
     - '${{ inputs.path-to-wiki-folder }}'
+
+branding:
+  icon: 'book'
+  color: 'blue'
