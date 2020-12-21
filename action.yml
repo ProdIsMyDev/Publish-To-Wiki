@@ -1,0 +1,14 @@
+name: 'Publish to GitHub Wiki'
+description: 'This Action publishes the Wiki to your GitHub Wiki and generates a Sidebar by the Folder Structure.'
+
+inputs:
+  path-to-wiki-folder:
+    description: 'Path to your wiki'
+    required: true
+    default: 'wiki'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args: 
+    - '${{ inputs.path-to-wiki-folder }}'
