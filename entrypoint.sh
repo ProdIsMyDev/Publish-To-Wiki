@@ -7,9 +7,10 @@ git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
 git config --global user.email "you@example.com"
 
 git clone "https://${GH_PERSONAL_ACCESS_TOKEN}@github.com/$GITHUB_REPOSITORY.git" repo
+cd ..
 git clone "https://${GH_PERSONAL_ACCESS_TOKEN}@github.com/$GITHUB_REPOSITORY.wiki.git" wiki
+cd ..
 
-ls
 cp -r repo/wiki/* wiki/
 python3 /create_sidebar.py
 cd wiki/
