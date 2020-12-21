@@ -1,7 +1,7 @@
 import os
 import re
 
-root_dir = 'wiki'
+root_dir = '/wiki'
 
 def sorted_alphanumeric(data):
     convert = lambda text: int(text) if text.isdigit() else text.lower()
