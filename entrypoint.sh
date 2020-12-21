@@ -1,12 +1,9 @@
 #!/bin/bash
 
-
 if [ -z "$GH_PERSONAL_ACCESS_TOKEN" ]; then
-    error "GH_PERSONAL_ACCESS_TOKEN environment variable is not set"
+    echo "GH_PERSONAL_ACCESS_TOKEN environment variable is not set"
     exit 1
 fi
-echo "$GH_PERSONAL_ACCESS_TOKEN"
-
 
 echo "Checking out project"
 git config --global user.name "$GITHUB_ACTOR"
