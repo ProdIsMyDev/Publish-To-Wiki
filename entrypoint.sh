@@ -12,15 +12,19 @@ cd /
 
 mkdir /wiki
 
-yes | cp -rf /repo/wiki/* /wiki/
-python3 /create_sidebar.py
-
 cd /wiki
 
 git init
 git config user.name "$GITHUB_ACTOR"
 git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
 git pull "$WIKI_URL"
+
+cd /
+
+yes | cp -rf /repo/wiki/* /wiki/
+python3 /create_sidebar.py
+
+cd /wiki
 
 git add .
 git commit -m "Automatic Wiki Deployment"
