@@ -7,6 +7,8 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y git
 
-RUN sudo apt-get install python
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y python3
 
 ENTRYPOINT ["/entrypoint.sh"]
