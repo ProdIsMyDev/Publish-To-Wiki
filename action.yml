@@ -4,8 +4,6 @@ description: 'This Action publishes the Wiki to your GitHub Wiki and generates a
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args: 
-    - '${{ inputs.path-to-wiki-folder }}'
 
 branding:
   icon: 'book'
