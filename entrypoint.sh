@@ -9,8 +9,9 @@ git config --global user.email "you@example.com"
 git clone "https://${GH_PERSONAL_ACCESS_TOKEN}@github.com/$GITHUB_REPOSITORY.git" /repo
 
 mkdir /wiki
+cd /wiki
 git init
-git pull https://${GH_PERSONAL_ACCESS_TOKEN}@github.com/$GITHUB_REPOSITORY.wiki.git /wiki
+git pull https://${GH_PERSONAL_ACCESS_TOKEN}@github.com/$GITHUB_REPOSITORY.wiki.git ./
 yes | cp -rf /repo/wiki/* /wiki/
 python3 /create_sidebar.py
 git add .
