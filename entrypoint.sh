@@ -6,7 +6,7 @@ git config --global user.name "$GITHUB_ACTOR"
 git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
 git clone "https://${GH_PERSONAL_ACCESS_TOKEN}@github.com/$GITHUB_REPOSITORY.git" /repo
-WIKI_URL="https://${GH_PERSONAL_ACCESS_TOKEN}@github.com/$GITHUB_REPOSITORY.wiki.git"
+WIKI_URL="https://${GITHUB_ACTOR}:${GH_PERSONAL_ACCESS_TOKEN}@github.com/$GITHUB_REPOSITORY.wiki.git"
 
 cd /
 
